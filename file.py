@@ -37,8 +37,48 @@ print("Writing into file sucess.")
 file.close()"""
 
 # to open the file as with students.
-with open("student.txt",'a') as fp: 
+"""with open("student.txt",'a') as fp: 
     message = ("there are six studnets present in class.")
     fp.write(message)
-print("Writing into file sucess.")                                   
+print("Writing into file sucess.")"""
+
+# Using exceptional handling to write.
+
+"""try:
+    with open("student.txt",'w') as fp:
+        message = "We are learning file"
+        fp.write("The file chapter has been completed.")
+        print("Write sucessfully")
+except FileNotFoundError:
+    print("oops! File not!")
+finally:
+    print("exit")"""
+
+#Reading from file:
+"""file = open("demo.txt",'w+')
+retrive = file.read()
+print(retrive)
+message = ("HI my name is Manish Raj Karn")
+file.write(message)
+file.close()"""
+
+with open("product.txt",'w+') as fp:
+    fp.write("Hello file")
+    print("write into the file sucess")
+    fp.seek(0)
+    reading = fp.read()
+    print(reading)
+
+# file = open("product.txt", 'r+')  # Use 'r+' to read and write without truncating
+# retrive = file.read()
+# print(retrive)
+# file.write("HI my name is Manish raj karn")
+# file.close()                    # Added parentheses
+
+file = open("product.txt",'w+')
+msg = "we are learning seek function."
+file.write(msg)
+file.seek(0)
+reading = file.read()
+print(reading)
 
