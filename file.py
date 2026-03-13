@@ -62,12 +62,12 @@ message = ("HI my name is Manish Raj Karn")
 file.write(message)
 file.close()"""
 
-with open("product.txt",'w+') as fp:
-    fp.write("Hello file")
-    print("write into the file sucess")
-    fp.seek(0)
-    reading = fp.read()
-    print(reading)
+# with open("product.txt",'w+') as fp:
+#     fp.write("Hello file")
+#     print("write into the file sucess")
+#     fp.seek(0)
+#     reading = fp.read()
+#     print(reading)
 
 # file = open("product.txt", 'r+')  # Use 'r+' to read and write without truncating
 # retrive = file.read()
@@ -75,10 +75,49 @@ with open("product.txt",'w+') as fp:
 # file.write("HI my name is Manish raj karn")
 # file.close()                    # Added parentheses
 
-file = open("product.txt",'w+')
+"""file = open("product.txt",'w+')
 msg = "we are learning seek function."
 file.write(msg)
 file.seek(0)
 reading = file.read()
-print(reading)
+print(reading)"""
 
+# creating the binary file.
+
+"""file = open("demo.bat",'wb')
+print("File created sucessfully")
+file.close()"""
+
+# writing on the binary file.
+
+# file = open ("demo.bat",'wb')
+# msg = b'Hello world'
+# file.write(msg)
+# print("write sucessfully")
+
+# reading the binary file.
+
+# file = open("sc600x600.jpg",'rb')
+# msg = file.read()
+# print(msg)
+
+# writing the file in the numbe of the 
+
+# file = open("number.txt",'w')
+# msg = 123456789
+# file.write(str(msg))
+# file.read(msg)
+
+# print("writign sucessfully")
+
+
+# file = open("number.txt","r")
+# read = int(file.read())
+# print(int(read))
+
+# a = type(read)
+# print(a)
+
+with open("E:\\python file handling\\file.txt",'w') as fp:
+    msg = "file created sucessfully"
+    print(msg)
